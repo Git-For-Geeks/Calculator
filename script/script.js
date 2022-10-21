@@ -2,10 +2,11 @@ var icon = document.getElementById("icon");
 icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "../light.png";
+    console.log("Yessssssssssssss");
+    icon.src = "./light.png";
   } else {
     console.log("Yessssssssssssss");
-    icon.src = "../dark.png";
+    icon.src = "./dark.png";
   }
 };
 
