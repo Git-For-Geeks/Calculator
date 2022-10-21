@@ -16,8 +16,16 @@ function textview(value) {
   document.getElementById("result").value += value;
 }
 function calculate() {
-  var p = document.getElementById("result").value;
-  document.getElementById("result").value = eval(p);
+  if((document.getElementById("result").value).indexOf("^")>-1){
+    var base = (document.getElementById("result").value).slice(0, (document.getElementById("result").value).indexOf("^"));
+    var exponent = (document.getElementById("result").value).slice((document.getElementById("result").value).indexOf("^") + 1);
+    document.getElementById("result").value = eval("Math.pow(" + base + "," + exponent + ")");
+  }
+  else{
+    var p = document.getElementById("result").value;
+    document.getElementById("result").value =eval(p);
+  }
+
 }
 
 function returnback() {
