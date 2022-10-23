@@ -26,7 +26,7 @@
 
     body{
         background-image: url("img.jpg");
-background-size: cover;
+        background-size: cover;
     }
 
     .display {
@@ -42,12 +42,19 @@ background-size: cover;
 
     .endl{
         background-color: orange;
+       
     }
 
     .endb{
         background-color: rgb(120,120,120);
+        
     }
     
     .end{ 
         background-color: rgb(255,165,0);
+        
     }
+
+
+
+    
