@@ -4,6 +4,8 @@
     padding: 30px;
     margin: 50px auto;
     border: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
     border-radius: 5%;
     background-color: #082032;
@@ -12,6 +14,10 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.dist{
+    padding-top: 40px;
 }
 
 input[type="button"] {
@@ -26,7 +32,6 @@ input[type="button"] {
     font-family: 'Caladea', serif;
     font-weight: bold;
 }
-
 center {
     color: var(--primary-color);
 }
@@ -58,13 +63,28 @@ body {
     background-color: gainsboro;
     border-color: black;
     width: 220px;
+
+    border-radius: 15px;
+
     margin-bottom: 15px;
+
 }
 
-.buts {
-    width: 50px;
-}
 
+
+
+.endb {   
+    width: 48px;
+    height: 45px; 
+    border-radius: 50px;
+    color: rgb(237, 247, 248);
+    border-color: black;
+    background-color: orange;
+    transition: backgound-color 0.5s;
+}
+.endb:hover{
+    background-color: #ff004f;
+}
 .endf {
     background-color: #ffc75f;
 }
@@ -76,14 +96,24 @@ body {
 .endb {
     background: rgb(166,169,182);
 background: linear-gradient(0deg, rgba(166,169,182,1) 0%, rgba(255,255,255,1) 68%);
-}
 
+}
 .end {
     background-color: rgb(255, 165, 0);
+
+    width: 100px;
+    height: 45px;
+    border-radius: 40px;
 }
+.end:hover{
+    background-color: #ff004f;
+}
+
+
 .endp{
     background-color: #833ab4;
 }
 .endlp{
     background: rgb(131,58,180);
 background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(245,181,252,1) 0%, rgba(255,255,255,1) 100%);
+}
