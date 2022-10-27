@@ -45,3 +45,20 @@ function reciprocal() {
   var p = document.getElementById("result").value;
   document.getElementById("result").value = 1 / p;
 }
+function sin(){
+  var p = document.getElementById("result").value;
+  document.getElementById("result").value = Math.sin(p);
+}
+function cos(){
+  var p = document.getElementById("result").value;
+  document.getElementById("result").value = Math.cos(p);
+}
+function tan(){
+  var p = document.getElementById("result").value;
+  document.getElementById("result").value = Math.tan(p);
+}
+function log(){
+  var p = document.getElementById("result").value;
+  document.getElementById("result").value = Math.log10(p);
+}
+
