@@ -3,7 +3,119 @@
 
 
 
+
 <html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="preload" href="./img-light.jpg" as="image">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <!-- Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <br>
+    <h1 style="font-size: 60px;font-family: 'Farro', sans-serif;">
+        <center>Calculat<img src="./dark.png" id="icon">r</center>
+    </h1>
+    <div class="box">
+        <center>
+            <table>
+                <tr>
+                    <td colspan="4"><input class="display" type="text" style="text-align: right" id="result">
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td><input class="endf" type="button" value="⌫" onclick="returnback()"
+                            style="padding-left:12px;padding-right:12px;"></td>
+                    <td><input class="endl" type="button" value="RD" onclick="round()"></td>
+
+                    <td><input class="endl" type="button" value="%" onclick="textview('%')">
+                    </td>
+
+                    <td><input class="endlp" type="button" value="C" onclick="clearScreen()"
+                            style="padding-left:16px;padding-right:16px;"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class = "endl" type="button" value="sin" onclick="sin()">
+                    </td>
+                    <td>
+                        <input class = "endl" type="button" value="cos" onclick="cos()">
+                    </td>
+                    <td>
+                        <input class = "endl" type="button" value="tan" onclick="tan()">
+                    </td>
+                    <td>
+                        <input class = "endlp" type="button" value="log" onclick="log()">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input class="endl" type="button" value="^" onclick="textview('^')">
+                    </td>
+                    <td><input class="endl" type="button" value="√ " onclick="sqrt()"></td>
+
+                    <td><input class="endl" type="button" value="1/x" onclick="reciprocal()">
+                    </td>
+                    <td><input class="endlp" type="button" value="÷" onclick="textview('/')">
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td><input class="endb" type="button" value="7" onclick="textview('7')">
+                    </td>
+                    <td class="buts"><input class="endb" type="button" value="8" onclick="textview('8')"></td>
+                    <td><input class="endb" type="button" value="9" onclick="textview('9')">
+                    </td>
+                    <td><input class="endlp" type="button" value="x" onclick="textview('*')">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><input class="endb" type="button" value="4" onclick="textview('4')"></td>
+                    <td><input class="endb" type="button" value="5" onclick="textview('5')"></td>
+                    <td class="buts"><input class="endb" type="button" value="6" onclick="textview('6')"></td>
+                    <td><input class="endlp" type="button" value="-" onclick="textview('-')" style="font-size:1.25rem;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input class="endb" type="button" value="1" onclick="textview('1')">
+                    </td>
+                    <td><input class="endb" type="button" value="2" onclick="textview('2')">
+                    </td>
+                    <td><input class="endb" type="button" value="3" onclick="textview('3')">
+                    </td>
+                    <td><input class="endlp" type="button" value="+" onclick="textview('+')">
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td colspan="2"><input class="endb" type="button" value="0" onclick="textview('0')"></td>
+                    <td><input class="endb" type="button" value="." onclick="textview('.')">
+                    </td>
+                    <td><input class="endp" type="button" value="=" onclick="calculate()">
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <script src="./script/script.js"></script>
+</body>
+
 
     <head>
         <title>Calculator</title>
